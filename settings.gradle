@@ -1,0 +1,11 @@
+include ':app'
+setBinding(new Binding([gradle: this]))
+evaluate(new File(
+  settingsDir,
+  '../flutter_boot_module/.android/include_flutter.groovy'
+))
+rootProject.name = "FlutterBootTest"
+
+include ':flutter_boot_module'
+project(':flutter_boot_module').projectDir = new File('../flutter_boot_module')
+
