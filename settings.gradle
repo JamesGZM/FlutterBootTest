@@ -7,5 +7,5 @@ evaluate(new File(
 rootProject.name = "FlutterBootTest"
 
 include ':flutter_boot_module'
-project(':flutter_boot_module').projectDir = new File('../flutter_boot_module')
+project(':flutter_boot_module').projectDir = new File('./flutter_boot_module')
 
